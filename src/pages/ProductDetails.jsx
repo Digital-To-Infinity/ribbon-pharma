@@ -48,26 +48,28 @@ const ProductDetails = () => {
                     </Link>
 
                     <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                        <div className={`grid grid-cols-1 ${product.image ? 'lg:grid-cols-2' : ''} gap-0`}>
 
                             {/* Image Section */}
-                            <div className="p-8 bg-slate-50/50 flex items-center justify-center h-full min-h-[400px] max-[376px]:min-h-[300px]">
-                                <motion.div
-                                    initial={{ opacity: 0, scale: 0.9 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                    transition={{ duration: 0.5 }}
-                                    className="relative w-full aspect-square rounded-2xl overflow-hidden shadow-lg bg-white"
-                                >
-                                    <img
-                                        src={product.image}
-                                        alt={product.name}
-                                        className="w-full h-full object-cover"
-                                    />
-                                    <div className="absolute top-4 right-4 bg-white/95 backdrop-blur px-4 py-2 rounded-full text-sm font-semibold text-primary shadow-sm border border-slate-100">
-                                        {product.category}
-                                    </div>
-                                </motion.div>
-                            </div>
+                            {product.image && (
+                                <div className="p-8 bg-slate-50/50 flex items-center justify-center h-full min-h-[400px] max-[376px]:min-h-[300px]">
+                                    <motion.div
+                                        initial={{ opacity: 0, scale: 0.9 }}
+                                        animate={{ opacity: 1, scale: 1 }}
+                                        transition={{ duration: 0.5 }}
+                                        className="relative w-full aspect-square rounded-2xl overflow-hidden shadow-lg bg-white"
+                                    >
+                                        <img
+                                            src={product.image}
+                                            alt={product.name}
+                                            className="w-full h-full object-cover"
+                                        />
+                                        <div className="absolute top-4 right-4 bg-white/95 backdrop-blur px-4 py-2 rounded-full text-sm font-semibold text-primary shadow-sm border border-slate-100">
+                                            {product.category}
+                                        </div>
+                                    </motion.div>
+                                </div>
+                            )}
 
                             {/* Details Section */}
                             <div className="p-8 flex flex-col justify-center">
@@ -76,7 +78,14 @@ const ProductDetails = () => {
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 0.5, delay: 0.2 }}
                                 >
-                                    <h1 className="text-3xl sm:text-4xl max-[376px]:text-3xl max-[321px]:text-2xl font-bold text-slate-900 mb-4">{product.name}</h1>
+                                    <div className="flex flex-wrap items-center gap-3 mb-4">
+                                        <h1 className="text-3xl sm:text-4xl max-[376px]:text-3xl max-[321px]:text-2xl font-bold text-slate-900">{product.name}</h1>
+                                        {!product.image && (
+                                            <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-semibold border border-primary/20">
+                                                {product.category}
+                                            </span>
+                                        )}
+                                    </div>
                                     <div className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-lg text-sm font-medium mb-6">
                                         {product.composition}
                                     </div>

@@ -141,6 +141,28 @@ export const products = [
         price: '₹0.00',
         quantity: '3 sachets of 10g each',
         description: 'A caffeine-free, sugar-free electrolyte drink fortified with ginseng. It is ideal for heat-related dehydration, headaches, and general well-being.'
+    },
+    {
+        id: 'RN-014',
+        slug: 'claximo-375-tablet',
+        name: 'Claximo-375 Mg (Tablet)',
+        composition: 'Amoxicillin Trihydrate (250 mg), Clavulanate Potassium (125 mg)',
+        category: 'Tablets',
+        image: '',
+        price: '₹0.00',
+        quantity: '10x10 Tablets',
+        description: 'A co-amoxiclav antibiotic combining amoxicillin with a beta-lactamase inhibitor (clavulanic acid). It is highly effective for treating community-acquired respiratory tract infections, acute bacterial sinusitis, otitis media, urinary tract infections, and dental infections by overcoming bacterial resistance.'
+    },
+    {
+        id: 'RN-015',
+        slug: 'claximo-forte-dry-syrup',
+        name: 'Claximo-Forte Dry (Syrup)',
+        composition: 'Amoxicillin Trihydrate (400 mg), Clavulanate Potassium (57 mg) / 5 ml',
+        category: 'Syrups',
+        image: '',
+        price: '₹0.00',
+        quantity: '30 ml (with sterile water)',
+        description: 'A pediatric-focused high-strength dry syrup formulation of amoxicillin and clavulanate potassium (ratio 7:1). Indicated for treating persistent or severe infections in children, including acute otitis media, tonsillitis, and lower respiratory tract infections caused by beta-lactamase producing organisms.'
     }
 ];
 

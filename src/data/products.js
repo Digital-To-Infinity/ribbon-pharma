@@ -163,6 +163,39 @@ export const products = [
         price: '₹0.00',
         quantity: '30 ml (with sterile water)',
         description: 'A pediatric-focused high-strength dry syrup formulation of amoxicillin and clavulanate potassium (ratio 7:1). Indicated for treating persistent or severe infections in children, including acute otitis media, tonsillitis, and lower respiratory tract infections caused by beta-lactamase producing organisms.'
+    },
+    {
+        id: 'RN-016',
+        slug: 'zicks-250-mg',
+        name: 'ZICKS-250 Mg (Tablet)',
+        composition: 'Azithromycin (250 mg)',
+        category: 'Tablets',
+        image: '',
+        price: '₹0.00',
+        quantity: '6x1 Tablets',
+        description: 'A broad-spectrum bactericidal antibiotic directed at tissue. It is indicated for respiratory tract infections, throat infections (pharyngitis), skin infections, and urinary tract infections. The 250 mg strength is suited for lower-dose and paediatric step-down regimens.'
+    },
+    {
+        id: 'RN-017',
+        slug: 'folo-9-tablets',
+        name: 'Folo-9 (Tablet)',
+        composition: 'Ferrous Ascorbate, Folic Acid, Vitamin B12, Zinc',
+        category: 'Tablets',
+        image: '',
+        price: '₹0.00',
+        quantity: '10x10 Tablets',
+        description: 'A hematinic supplement designed to raise haemoglobin, support RBC production and correct iron-deficiency anaemia. Indicated during pregnancy, lactation, post-surgery, and dietary insufficiency.'
+    },
+    {
+        id: 'RN-018',
+        slug: 'folo-9-syrup',
+        name: 'Folo-9 (Syrup)',
+        composition: 'Iron, Folic Acid, Vitamin B12, Zinc / 5 ml',
+        category: 'Syrups',
+        image: '',
+        price: '₹0.00',
+        quantity: '200 ml',
+        description: 'A palatable liquid hematinic for paediatric and adult use, supporting haemoglobin levels and treating iron-deficiency anaemia where tablets are unsuitable.'
     }
 ];
 
